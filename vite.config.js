@@ -5,13 +5,14 @@ import federation from '@originjs/vite-plugin-federation';
 export default defineConfig({
   plugins: [
     react(),
-    federation({
-      name: 'host-app',
-      remotes: {
-        remote_app: 'http://localhost:4173/assets/remoteEntry.js',
-      },
-      shared: ['react'],
-    }),
+    // federation({
+    //   name: 'host-app',
+    //   remotes: {
+    //     remote_app:
+    //       'https://dzfa1uifb0sb6.cloudfront.net/buildTestjs/remote-test/index-BQ9Cp-Ld.js',
+    //   },
+    //   shared: ['react'],
+    // }),
   ],
   build: {
     modulePreload: false,

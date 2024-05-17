@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import List from 'remote_app/List';
-import Input from 'remote_app/Input';
+// import List from 'remote_app/List';
+// import Input from 'remote_app/Input';
+import RemoteList from './components/RemoteList.jsx';
 
 function App() {
   const [newTodo, setNewTodo] = useState('');
@@ -16,8 +17,9 @@ function App() {
 
   return (
     <>
-      <Input value={newTodo} onChange={setNewTodo} onSubmit={onSubmit} />
-      <List items={todos} />
+      {/* <Input value={newTodo} onChange={setNewTodo} onSubmit={onSubmit} />
+      <List items={todos} /> */}
+      <RemoteList />
     </>
   );
 }
